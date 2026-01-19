@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="error404"><!--<![endif]--><head lang="fr-FR"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width">
+    
+    <title>FLYING DUTCHMAN</title>
+	<script type="text/javascript" src="./nuaaer_file/jquery-1.8.3.min.js"></script>
+	<script src="./nuaaer_file/jquery.ld.dept.js"></script>
+    <link rel="stylesheet" href="./nuaaer_file/style.css" type="text/css">
+	<!-- Standard iPhone -->  
+<link rel="apple-touch-icon" sizes="57x57" href="./nuaaer_file/touch-icon-iphone-114.png" />  
+<!-- Retina iPhone -->  
+<link rel="apple-touch-icon" sizes="114x114" href="./nuaaer_file/touch-icon-iphone-114.png" />  
+<!-- Standard iPad -->  
+<link rel="apple-touch-icon" sizes="72x72" href="./nuaaer_file/touch-icon-ipad-144.png" />  
+<!-- Retina iPad -->  
+<link rel="apple-touch-icon" sizes="144x144" href="./nuaaer_file/touch-icon-ipad-144.png" />  
+<script type="text/JavaScript">
+	
+function time(){
+  var now= new Date();
+  var year=now.getFullYear();
+  var month=now.getMonth();
+  var date=now.getDate();
+ document.getElementById("year").innerHTML=year;
+ var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+			document.getElementById("pid").innerHTML="</br>";
+            break;
+        }
+    }
+} 
+window.onload=time;
+
+</script>
+</head>
+<body>
+	<div class="display-table">
+		<div class="display-table-cell">
+			<h1><img src="./nuaaer_file/logo.png" alt="nuaaer • cn"></h1>
+			<h2>nuaaer.com</h2>
+			<h3>Copyright © 2013 - <span id='year'></span> nuaaer. <span id="pid" name="pid"></span>All Rights Reserved</h3>
+			<p><a href="http://nuaaer.com">Don't be evil</a></p>
+		</div>
+	</div>
+	
+
+    
+</body></html>
